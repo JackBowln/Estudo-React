@@ -3,6 +3,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
+import Card from './components/Layout/Card'
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
 
@@ -15,14 +16,30 @@ import Aleatorio from "./components/basicos/Aleatorio";
 export default (props) => (
   <div id="app">
       <h1>Fundamentos React</h1>
-    <Aleatorio min={1} max={60}></Aleatorio>
-    <Fragmento></Fragmento>
-    <ComParametro
+    <Card 
+    titulo = 'Desafio Aleatório'>
+          <Aleatorio min={1} max={60}></Aleatorio>
+    </Card>
+
+    <Card 
+    titulo = '#03 - Fragmento'>
+          <Fragmento></Fragmento>
+    </Card>
+    <Card 
+    titulo = '#02 - Com Parametro'>
+          <ComParametro
       titulo="Situação do aluno" //Todos os componentes devem ser envolvidos por tag
       aluno="Vinicius"
       nota={9.5}
       materia="física"
     />
-    <Primeiro></Primeiro>
+    </Card>
+    <Card 
+    titulo = '#01 - Primeiro'>
+          <Primeiro></Primeiro>
+    </Card>
+    <Card 
+    titulo = 'um título aí'>
+    </Card>
   </div>
 );
