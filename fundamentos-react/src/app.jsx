@@ -5,6 +5,7 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/Layout/Card";
+import Familia from './components/basicos/Familia'
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
 
@@ -18,6 +19,9 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#05 - Componente com Filhos" color = '#3B4D8D'>
+        <Familia snome ="Schmidt"></Familia>
+      </Card>
       <Card titulo="#04 - Desafio Aleatório" color = '#080'>
         <Aleatorio min={1} max={60}></Aleatorio>
       </Card>
