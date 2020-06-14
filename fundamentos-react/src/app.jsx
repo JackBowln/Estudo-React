@@ -1,7 +1,7 @@
-import ReactDOM from'react-dom'
-import React from 'react';
-import './index.css'
-import App from './app'
+import React from "react";
+import Primeiro from "./components/basicos/Primeiro";
+import ComParametro from "./components/basicos/ComParametro";
+import Fragmento from "./components/basicos/Fragmento";
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
 
@@ -11,7 +11,16 @@ import App from './app'
 
 //import Primeiro from './components/basicos/Primeiro'      import da função "Primeiro.js" da pasta components
 
-ReactDOM.render(
-    <App></App>,
-    document.getElementById('root')
-    )
+export default (props) => (
+  <div id="app">
+    <Primeiro></Primeiro>
+
+    <ComParametro
+      titulo="Situação do aluno" //Todos os componentes devem ser envolvidos por tag
+      aluno="Vinicius"
+      nota={9.5}
+      materia="física"
+    />
+    <Fragmento></Fragmento>
+  </div>
+);
