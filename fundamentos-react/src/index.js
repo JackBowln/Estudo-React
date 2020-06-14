@@ -17,8 +17,8 @@ ReactDOM.render(
             <Primeiro></Primeiro>
 
             <ComParametro
-            titulo = "Segundo Componente"
-            subtitulo = "Subtitulo do segundo componente"/>
+            titulo = "Situação do aluno"
+            aluno = "Vinicius" nota = {9.5} materia = "física"/>
         </div>,
     document.getElementById('root')
 
