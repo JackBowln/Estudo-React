@@ -18,14 +18,14 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-      <Card titulo="#04 - Desafio Aleatório">
+      <Card titulo="#04 - Desafio Aleatório" color = '#080'>
         <Aleatorio min={1} max={60}></Aleatorio>
       </Card>
 
-      <Card titulo="#03 - Fragmento">
+      <Card titulo="#03 - Fragmento" color = '#276FBF'>
         <Fragmento></Fragmento>
       </Card>
-      <Card titulo="#02 - Com Parametro">
+      <Card titulo="#02 - Com Parametro" color = '#FD151B'>
         <ComParametro
           titulo="Situação do aluno" //Todos os componentes devem ser envolvidos por tag
           aluno="Vinicius"
@@ -33,10 +33,12 @@ export default (props) => (
           materia="física"
         />
       </Card>
-      <Card titulo="#01 - Primeiro">
+      <Card titulo="#01 - Primeiro" color = '#A846A0'>
         <Primeiro></Primeiro>
       </Card>
-      <Card titulo="um título aí"></Card>
+      <Card titulo="um título aí" color = '#FC814A'>
+        <div>Isso é um exemplo de Card</div>
+      </Card>
     </div>
   </div>
 );
