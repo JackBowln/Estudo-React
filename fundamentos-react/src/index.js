@@ -2,7 +2,7 @@ import ReactDOM from'react-dom'
 import React from 'react';
 import './index.css'
 import Primeiro from './components/basicos/Primeiro'
-
+import ComParametro from './components/basicos/ComParametro'
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
 
@@ -13,8 +13,12 @@ import Primeiro from './components/basicos/Primeiro'
 //import Primeiro from './components/basicos/Primeiro'      import da função "Primeiro.js" da pasta components
 ReactDOM.render(
 
-        <div>
+        <div id="app">
             <Primeiro></Primeiro>
+
+            <ComParametro
+            titulo = "Segundo Componente"
+            subtitulo = "Subtitulo do segundo componente"/>
         </div>,
     document.getElementById('root')
 
