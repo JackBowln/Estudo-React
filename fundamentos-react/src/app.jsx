@@ -7,6 +7,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/Layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from './components/Repetição/ListaAlunos'
 
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
@@ -21,6 +22,9 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+    <Card titulo="#06 - Repetição" color="#087E8B">
+        <ListaAlunos></ListaAlunos>
+      </Card>
       <Card titulo="#05 - Componente com Filhos" color="#3B4D8D">
         <Familia snome="Dias">
           <FamiliaMembro nome="Vinicius" />
