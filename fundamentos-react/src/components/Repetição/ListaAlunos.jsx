@@ -12,7 +12,7 @@ export default (props) => {
     //O array "Alunos" é mapeado e pega-se todos os elementos para serem convertidos em uma lista
     return (
       <li key={Aluno.id}>
-        {Aluno.id} {Aluno.nome} -> {Aluno.nota}
+        {Aluno.id}) {Aluno.nome} -> {Aluno.nota}
       </li>
     );
   });

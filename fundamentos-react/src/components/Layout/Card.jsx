@@ -2,10 +2,10 @@ import React from "react";
 import "./Card.css";
 
 export default (props) => {
-  const CardStyle = {
-    backgroundColor: props.color || '#F00',
-    borderColor: props.color || '#F00'
-  }
+  // const CardStyle = {
+  //   backgroundColor: props.color || '#F00',
+  //   borderColor: props.color || '#F00'
+  // }
   return (
     <div className = "Card" style = {{
 

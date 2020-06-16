@@ -23,7 +23,7 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-    <Card titulo="#07 - Desafio Repetição Tabela" color="#087E8B">
+    <Card titulo="#07 - Desafio Repetição Tabela" color="#3993DD">
         <TabelaProdutos></TabelaProdutos>
       </Card>
     <Card titulo="#06 - Repetição" color="#087E8B">

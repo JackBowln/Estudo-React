@@ -7,8 +7,7 @@ export default (props) => {
   const{ min, max } = props         //destructuring. Que é a mesma coisa que as duas variáveis criadas acima.
 
 
-{/*just like this -> */}          const [a, b] = [1, 2]
-{/*also like this -> */}          const {c, d, e, f} = {c: 12, d: min, e:'test', f: 2.51 }
+
 
 
   const Rand = parseInt(Math.random() * (max - props.min)) + props.min;
@@ -27,8 +26,10 @@ export default (props) => {
         <strong>Valores Escolhidos = {Rand} e {Rand1}</strong>
       </p>
       <p>
-          <h5>Atribuição via desestruturação (destructuring assignment):</h5>
-          {c}, {d}, {e}, {f}
+          {/* <h5>Atribuição via desestruturação (destructuring assignment):</h5>
+          just like this ->         const [a, b] = [1, 2];
+          also like this ->         const {c, d, e, f} = {c: 12, d: min, e:'test', f: 2.51 }
+          {a}, {b}, {c}, {d}, {e}, {f} */}
       </p>
     </div>
   );
