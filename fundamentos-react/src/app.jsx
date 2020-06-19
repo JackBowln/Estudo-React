@@ -10,6 +10,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from './components/Repetição/ListaAlunos'
 import TabelaProdutos from './components/Repetição/TabelaProdutos.jsx'
 import ParOuImpar from './components/Condicional/ParOuImpar'
+import UsuarioInfo from './components/Condicional/UsuarioInfo'
 
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
@@ -24,8 +25,14 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+    <Card titulo="#09 - Renderização Condicional 2" color="#F09498">
+        <UsuarioInfo usuario = {{nome: 'Jeferson'}}></UsuarioInfo>
+        <p></p>
+        <UsuarioInfo usuario = {{nome: ''}}></UsuarioInfo>
+      </Card>
     <Card titulo="#08 - Renderização Condicional" color="#F49D37">
         <ParOuImpar numero = {9868}></ParOuImpar>
+        <UsuarioInfo usuario = {{nome: 'Usuario do exercicio 9'}}></UsuarioInfo>
       </Card>
     <Card titulo="#07 - Desafio Repetição Tabela" color="#3993DD">
         <TabelaProdutos></TabelaProdutos>
