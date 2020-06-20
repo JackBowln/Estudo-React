@@ -7,10 +7,11 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/Layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
-import ListaAlunos from './components/Repetição/ListaAlunos'
-import TabelaProdutos from './components/Repetição/TabelaProdutos.jsx'
-import ParOuImpar from './components/Condicional/ParOuImpar'
-import UsuarioInfo from './components/Condicional/UsuarioInfo'
+import ListaAlunos from "./components/Repetição/ListaAlunos";
+import TabelaProdutos from "./components/Repetição/TabelaProdutos.jsx";
+import ParOuImpar from "./components/Condicional/ParOuImpar";
+import UsuarioInfo from "./components/Condicional/UsuarioInfo";
+import DiretaPai from "./components/Comunicacao/DiretaPai";
 
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
@@ -25,19 +26,23 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-    <Card titulo="#09 - Renderização Condicional 2" color="#F09498">
-        <UsuarioInfo usuario = {{nome: 'Jeferson'}}></UsuarioInfo>
-        <p></p>
-        <UsuarioInfo usuario = {{nome: ''}}></UsuarioInfo>
+      <Card titulo="#10 - Comunicação Direta" color="#52489C">
+        <DiretaPai></DiretaPai>
       </Card>
-    <Card titulo="#08 - Renderização Condicional" color="#F49D37">
-        <ParOuImpar numero = {9868}></ParOuImpar>
-        <UsuarioInfo usuario = {{nome: 'Usuario do exercicio 9'}}></UsuarioInfo>
+      <Card titulo="#09 - Renderização Condicional 2" color="#F09498">
+        {/*         <UsuarioInfo usuario = {{nome: 'Jeferson'}}></UsuarioInfo>
+        <p></p> */}
+        <UsuarioInfo usuario={{ nome: "" }}></UsuarioInfo>
+        <UsuarioInfo usuario={{ nome: "Thomas Jefferson" }}></UsuarioInfo>
       </Card>
-    <Card titulo="#07 - Desafio Repetição Tabela" color="#3993DD">
+      <Card titulo="#08 - Renderização Condicional" color="#F49D37">
+        <ParOuImpar numero={9868}></ParOuImpar>
+        <UsuarioInfo usuario={{ nome: "Usuario do exercicio 9" }}></UsuarioInfo>
+      </Card>
+      <Card titulo="#07 - Desafio Repetição Tabela" color="#3993DD">
         <TabelaProdutos></TabelaProdutos>
       </Card>
-    <Card titulo="#06 - Repetição" color="#087E8B">
+      <Card titulo="#06 - Repetição" color="#087E8B">
         <ListaAlunos></ListaAlunos>
       </Card>
       <Card titulo="#05 - Componente com Filhos" color="#3B4D8D">
