@@ -15,6 +15,7 @@ import DiretaPai from "./components/Comunicacao/DiretaPai";
 import IndiretaPai from "./components/Comunicacao/IndiretaPai";
 import Input from "./components/Formulário/Input"
 import Contador from "./components/Contador/Contador"
+import Mega from "./components/Mega/Mega"
 
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
@@ -29,6 +30,9 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#14 - Mega" color="#07362B">
+        <Mega qtde={6}></Mega>
+      </Card>
       <Card titulo="#13 - Contador" color="#5FB1BF">
         <Contador numeroInicial={10}></Contador>
       </Card>
