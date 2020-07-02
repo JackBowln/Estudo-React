@@ -14,6 +14,7 @@ import UsuarioInfo from "./components/Condicional/UsuarioInfo";
 import DiretaPai from "./components/Comunicacao/DiretaPai";
 import IndiretaPai from "./components/Comunicacao/IndiretaPai";
 import Input from "./components/Formulário/Input"
+import Contador from "./components/Contador/Contador"
 
 // import ReactDOM from'react-dom'        (importação da DOM, ou Document object model, do react.
 //                                          Isso possibilita a renderização, ReactDOM.render() de um código jsx na nossa aplicação)
@@ -28,6 +29,9 @@ export default (props) => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#13 - Contador" color="#5FB1BF">
+        <Contador numeroInicial={10}></Contador>
+      </Card>
       <Card titulo="#12 - Componente Controlado(Input)" color="#FF5A5F">
         <Input></Input>
       </Card>
