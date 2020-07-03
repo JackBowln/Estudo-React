@@ -31,7 +31,7 @@ export default class Calculator extends Component {
                 <Button label="2"></Button>
                 <Button label="3"></Button>
                 <Button label="+"></Button>
-                <Button className={'doubleButton'} label="0" ></Button>
+                <Button className={`doubleButton`} label="0" ></Button>
                 <Button label="."></Button>
                 <Button label="="></Button>
             </DivCalculator>
