@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import './button.css'
 
 export default props =>{
-    return(<>
+    return(
             <button 
             onClick={e => props.click && props.click(props.label)
             }
@@ -13,6 +13,6 @@ export default props =>{
             ${props.double ? 'double' : ''}
             ${props.triple ? 'triple' : ''}
             `}>{props.label}</button>
-            </>
+            
         )
 }
