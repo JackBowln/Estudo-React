@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Button from '../components/Button'
-
+import Display from '../components/Display'
 const DivCalculator = styled.div `
     height: 320px;
     width: 235px;
@@ -9,12 +9,13 @@ const DivCalculator = styled.div `
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 48px 48px 48px 48px 48px;
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
 `
 export default class Calculator extends Component {
     render(){
         return(
             <DivCalculator>
+                <Display value={100}></Display>
                 <Button label="AC"></Button>
                 <Button label="/"></Button>
                 <Button label="7"></Button>
