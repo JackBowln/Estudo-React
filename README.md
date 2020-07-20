@@ -13,9 +13,9 @@ git push -u origin master
 - [ ] Configurar uma aplicação com Webpack
 - [X] Criar componentes em React
 - [ ] Integrar o Redux em uma aplicação React
-- [ ] Desenvolver uma aplicação do zero com React/Redux
-- [ ] Desenvolver uma aplicação full-stack em Javascript
-- [ ] Aplicar boas práticas de desenvolvimento
+- [X] Desenvolver uma aplicação do zero com React/Redux
+- [X Desenvolver uma aplicação full-stack em Javascript
+- [X Aplicar boas práticas de desenvolvimento
 
 
 Curso baseado nas aulas da plataforma [Cod3rs](https://www.cod3r.com.br) na [Udemy](https://www.udemy.com/course/react-redux-pt/).
